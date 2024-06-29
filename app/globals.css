@@ -1,0 +1,118 @@
+@font-face {
+  font-family: GT America Mono;
+  src: url(/fonts/GT-America-Mono-Regular-Trial.otf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap
+}
+
+@font-face {
+  font-family: GT America Mono;
+  src: url(/fonts/GT-America-Mono-Bold-Trial.otf);
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap
+}
+
+@font-face {
+  font-family: GT America Mono;
+  src: url(/fonts/GT-America-Mono-Bold-Italic-Trial.otf);
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap
+}
+
+@font-face {
+  font-family: GT America Mono;
+  src: url(/fonts/GT-America-Mono-Regular-Italic-Trial.otf);
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap
+}
+
+@font-face {
+  font-family: GT America Mono;
+  src: url(/fonts/GT-America-Mono-Black-Trial.otf);
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  font-family: GT America Mono,system-ui,sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+.MuiDialog-paper{
+  width: 100% !important;
+  max-width: 500px !important;
+  margin-top: auto !important;
+  margin-bottom: 0px !important;
+  background-color: rgba(15,23,42,1);
+  color: white;
+}
+
+
+body {
+  max-width: 500px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.text-base, .text-xs {
+  line-height: 1.5;
+  letter-spacing: -.03em;
+}
+
+#ton-connect-button button {
+  background-color: rgb(30,64,175);
+}
+
+#ton-connect-button button {
+  stroke: white;
+}
+
+#ton-connect-button button *{
+  font-family: GT America Mono,system-ui,sans-serif !important;
+}
+
+.coingroup:active >div:first-of-type{
+  transform: scale(1.05) rotateY(45deg) !important;
+}
